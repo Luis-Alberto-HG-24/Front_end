@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Ejersicios</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body class="p-5">
+    <div class="container borde-general">
+        <div class="row">
+            <div class="col mb-3 text-white">
+                <h1 class="fw-bold"> Ejersicios </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 mb-5">
+                <div class="container borde-ejersicio text-white">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h4 class="lead"><i class="fa-solid fa-1 icono"></i></h4>
+                        </div>
+                        <div class="col-12 mb-3 ">
+                              <span class="lead"> Numeros iniciales : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span>
+                        </div>
+                        <div class="col-12 mb-3">
+                              <span class="lead" id="numeros_random"></span>
+                        </div>
+                        <div class="col-12 mb-3">
+                              <span class="lead" id="numeros_cubo"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mb-5">
+                <div class="container borde-ejersicio text-white">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h4 class="lead"><i class="fa-solid fa-2 icono"></i></h4>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h5 class="lead" id="arreglo_cadena"></h5>
+                        </div>
+                        <div class="col-12 mb-5">
+                            <h5 class="lead" id="inversa"></h5>
+                        </div>
+                      <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="nueva_cadena" placeholder="" value="">
+                                    <label for="" class="text-muted">Cadena <span id="valor"></span> </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-light mt-1" onclick="inicalizar()">Actualizar</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mb-3">
+                <div class="container borde-ejersicio text-white">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h4 class="lead"><i class="fa-solid fa-3 icono"></i></h4>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h5 class="lead" id="calificaciones"></h5>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h5 class="lead" id="destacados"></h5>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="nueva_calif" placeholder="" value="">
+                                <label for="" class="text-muted">Calificacion <span id="num_calif"></span></label>
+                                <div class="small ms-2 mt-2 text-danger" id="error_mensaje"></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-light" onclick="ingresa_num()">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mb-3">
+                <div class="container borde-ejersicio text-white">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h4 class="lead"><i class="fa-solid fa-4 icono"></i></h4>
+                        </div>
+                        <div class="col-12 mb-3"> <h5 class="lead" id="numeros"></h5 ></div>
+                        <div class="col-12 mb-3"> <h5 class="lead" id="numeros_final"></h5></div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="nuevo_numero" placeholder="" value="">
+                                <label for="" class="text-muted">Numero <span id="contador_num"></span></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-light" onclick="verifica_numero()">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 my-5">
+                <div class="container borde-ejersicio">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h5 class="lead text-white"><i class="fa-solid fa-5 icono"></i></h5>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h5 class="lead text-white" id="numeros_aleatorios"></h5>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h5 class="lead text-white" id="numeros_ordenados"></h5>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <i class="fa-brands fa-grav text-white fs-1"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
