@@ -4,7 +4,7 @@
             <div class="lead fs-1">Ejersicios 3</div>
         </div>
     </div>
-    <div class="row my-5">
+    <div class="row justify-content-center my-5">
         <div class="col-6">
             <div class="container">
                 <div class="row">
@@ -96,6 +96,67 @@
                 </div>
             </div>
         </div>
+        <div class="col-6 mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="lead fs-5">Ejersicio 3</div>
+                    </div>
+                    <div class="col-12">
+                        <p class="lead">
+                            La política de cobro de una compañía telefónica es:
+                            cuando se realiza una llamada, el cobro es por el tiempo que ésta dura
+                            de tal forma que
+
+                            los primeros cinco minutos cuestan 1 euro,
+                            los siguientes tres, 80 céntimos,
+                            los siguientes dos minutos, 70 céntimos,
+                            y a partir del décimo minuto, 50 céntimos.
+
+                            Además, se carga un impuesto de
+                            3 % cuando es domingo,
+                            y si es otro día,
+                            en turno de mañana, 15 %, y en turno de tarde, 10 %.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="minutos_e3" placeholder="Minutos de llamada" value="">
+                            <label for="minutos">Minutos de llamada</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <select class="form-select" id="dia_e3" aria-label="">
+                                <option selected></option>
+                                <option value="1">Lunes</option>
+                                <option value="2">Martes</option>
+                                <option value="3">Miercoles</option>
+                                <option value="">Jueves</option>
+                                <option value="">Viernes</option>
+                                <option value="">Sabado</option>
+                                <option value="5">Domingo</option>
+                            </select>
+                            <label for="">Dia de la semana</label>
+                        </div>
+                    </div>
+                    <div class="col-6 d-none my-4" id="seccion_input">
+                        <div class="form-floating">
+                            <select class="form-select" id="turno_e3" aria-label="">
+                                <option selected>Selecciona el turno</option>
+                                <option value="1">Matutino</option>
+                                <option value="2">Vespertino</option>
+                            </select>
+                            <label for="">Turno</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col text-center">
+                            <button type="button" class="btn btn-primary" onclick="objeto.ejersicio3()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
